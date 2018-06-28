@@ -1,0 +1,53 @@
+{
+  "name": "NextNow",
+  "description": "Next or Pause song in Youtube, SoundCloud and more while you on Chrome by short key",
+  "version": "1.0.3",
+  "manifest_version": 2,
+  "permissions": [
+    "storage",
+    "tabs",
+    "bookmarks",
+    "management",
+    "*://*/*"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "Next Now"
+  },
+  "commands": {
+    "next": {
+      "description": "next",
+      "suggested_key": {
+        "default": "Ctrl+Space"
+      }
+    },
+    "global_next2": {
+      "description": "next",
+      "suggested_key": {
+        "default": "Ctrl+Shift+0"
+      },
+      "global": true
+    },
+    "pause": {
+      "description": "pause",
+      "suggested_key": {
+        "default": "Ctrl+Shift+Space"
+      }
+    },
+    "pause_global": {
+      "description": "pause",
+      "suggested_key": {
+        "default": "Ctrl+Shift+9"
+      },
+      "global": true
+    }
+  },
+  "icons": { "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png" }
+}
